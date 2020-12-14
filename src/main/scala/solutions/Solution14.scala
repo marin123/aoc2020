@@ -1,7 +1,5 @@
 package solutions
 
-import javax.swing.text.AttributeSet.ParagraphAttribute
-
 import scala.io.Source
 
 class Solution14(str: String) extends Solution {
