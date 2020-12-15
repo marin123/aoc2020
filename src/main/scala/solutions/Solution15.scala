@@ -17,7 +17,7 @@ case class Solution15(str: String) extends Solution {
           saidNumbers(stackNum) = (i, i)
           stackNum
         }
-        else if (saidNumbers.contains(prevNumber)) {
+        else {
           val ageNum = {
               val diff: Int = saidNumbers(prevNumber)._1 - saidNumbers(prevNumber)._2
               saidNumbers(diff) = {if (!saidNumbers.contains(diff)) ( i , i)
@@ -26,7 +26,6 @@ case class Solution15(str: String) extends Solution {
             }
           ageNum
         }
-        else 0
       }
       prevNumber = nextNumber
     }
